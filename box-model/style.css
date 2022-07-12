@@ -1,0 +1,26 @@
+section {}
+
+.div1 {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: teal;
+    padding: 10px;
+    border: 20px solid;
+    margin: 20px;
+}
+
+.div2 {
+    display: inline;
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    background-color: maroon;
+    padding: 10px;
+    /* border: 20px solid; */
+    margin: 20px;
+}
+
+.div2:hover {
+    border: 20px solid;
+}
