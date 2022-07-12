@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    display: flex;
+    gap: 15px;
+}
+
+div>div {
+    padding: 25px;
+    background-color: aquamarine;
+    border: 2px solid white;
+}
+
+div>div:hover {
+    border: 2px solid;
+}
