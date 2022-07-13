@@ -1,10 +1,43 @@
 .container {
     display: grid;
-    /* grid-template-columns: 200px auto 200px; */
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 2fr 3fr;
-    /* grid-template-rows: 200px 200px; */
-    /* column-gap: 5px; */
-    /* row-gap: 5px; */
-    gap: 5px;
+    height: 100vh;
+
+    /* grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px; */
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+    /* grid-template: 20% auto 20% / 20% auto 20%; */
+
+    /* row-gap: 10px; */
+    /* column-gap: 10px; */
+    gap: 10px;
+
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: dense;
 }
+
+/* 
+Grid
+----
+Container
+---------
+display: grid | inline-grid | subgrid;
+grid-template-columns: 1fr 1fr 1fr | repeat(3, 1fr);
+grid-template-rows: 1fr 1fr 1fr | repeat(3, 1fr);
+grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+row-gap: 10px;
+column-gap: 10px;
+gap: 10px;
+justify-items: start | end | center | stretch;
+align-items: start | end | center | stretch;
+justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
+align-content: start | end | center | stretch | space-around | space-between | space-evenly;
+grid-auto-flow: row | column | dense;
+
+Children
+--------
+
+*/
