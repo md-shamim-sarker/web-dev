@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    color: white;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    margin: 20px;
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container div:nth-child(1) {
+    background-color: violet;
+}
+
+.container div:nth-child(2) {
+    background-color: blue;
+}
+
+.container div:nth-child(3) {
+    background-color: skyblue;
+}
+
+.container div:nth-child(4) {
+    background-color: green;
+}
+
+.container div:nth-child(5) {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.container div:nth-child(6) {
+    background-color: orange;
+}
+
+.container div:nth-child(7) {
+    background-color: red;
+}
